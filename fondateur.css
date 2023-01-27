@@ -1,0 +1,81 @@
+
+body{
+    background-color:azure;
+}
+
+.float-image{
+    width: 40%;
+    height: 90%;
+    margin-top: 20px;
+    
+}
+.container,.object{
+    text-align: center;
+}
+.co{
+    font-weight: bold;
+}
+
+.float-text{
+    text-align: justify;
+}
+.objectif{
+    text-align:justify; 
+    margin-left: 20%;
+    margin-right: 20%;
+
+}
+.arrow-up {
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    top: 97%;
+    position: fixed;
+    bottom: 5px;
+    right: 20px;
+    cursor: pointer;
+    color: darkblue;
+    /* display: none; la flèche est cachée par défaut */
+  }
+.bea0{
+    color: gold;
+}
+nav ul{
+    display:flex;
+    width: 100%;
+    margin: 0 auto;
+    background-color:blue;
+    list-style-type: none;
+    height: 5rem;
+    justify-content: center;
+}
+nav{
+    width: 100%;
+
+}
+li a{
+    font-size:19px;
+    padding: 50px;
+    margin-top: 10rem;
+    color: black;
+    text-decoration: none;
+}
+.bea3:hover, .bea0:hover{
+    font-size: 25px;
+    color:crimson;
+}
+@media screen and (max-width:700px) {
+    .float-image{
+        width: 100%;
+
+        
+    } 
+    .float-text{
+        text-align: justify;
+    }
+    .objectif{
+        max-width: 100%;
+        margin-left: 5%;
+    margin-right: 5%;
+    }
+}
