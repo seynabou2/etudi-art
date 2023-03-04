@@ -2,9 +2,28 @@
 body{
     background-color:azure;
 }
+.breadcrumb {
+	/*centering*/
+	display: inline-block;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.35);
+	overflow: hidden;
+	border-radius: 5px;
+	/*Lets add the numbers for each link using CSS counters. flag is the name of the counter. to be defined using counter-reset in the parent element of the links*/
+	counter-reset: flag; 
+}
 
+.breadcrumb a {
+	text-decoration: none;
+	outline: none;
+	display: block;
+	float: left;
+	font-size: 18px;
+	line-height: 36px;
+	padding: 0 10px 0 60px;
+	position: relative;
+}
 .float-image{
-    width: 40%;
+    width: 50%;
     height: 90%;
     margin-top: 20px;
     
@@ -16,54 +35,15 @@ body{
     font-weight: bold;
 }
 
-.float-text{
+.float-text, .objectif{
     text-align: justify;
 }
-.objectif{
-    text-align:justify; 
+.objectif{ 
     margin-left: 20%;
     margin-right: 20%;
 
 }
-.arrow-up {
-    width: 40px;
-    height: 40px;
-    background-repeat: no-repeat;
-    top: 97%;
-    position: fixed;
-    bottom: 5px;
-    right: 20px;
-    cursor: pointer;
-    color: darkblue;
-    /* display: none; la flèche est cachée par défaut */
-  }
-.bea0{
-    color: gold;
-}
-nav ul{
-    display:flex;
-    width: 100%;
-    margin: 0 auto;
-    background-color:blue;
-    list-style-type: none;
-    height: 5rem;
-    justify-content: center;
-}
-nav{
-    width: 100%;
 
-}
-li a{
-    font-size:19px;
-    padding: 50px;
-    margin-top: 10rem;
-    color: black;
-    text-decoration: none;
-}
-.bea3:hover, .bea0:hover{
-    font-size: 25px;
-    color:crimson;
-}
 @media screen and (max-width:700px) {
     .float-image{
         width: 100%;
@@ -78,4 +58,11 @@ li a{
         margin-left: 5%;
     margin-right: 5%;
     }
+    .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+      }
+      .navbar-nav .nav-item {
+        margin-bottom: 10px;
+      }
 }

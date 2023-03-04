@@ -1,48 +1,38 @@
 body{
     background-color:aliceblue;
+        overflow-x: hidden;
+}
+.breadcrumb {
+	/*centering*/
+	display: inline-block;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.35);
+	overflow: hidden;
+	border-radius: 5px;
+	/*Lets add the numbers for each link using CSS counters. flag is the name of the counter. to be defined using counter-reset in the parent element of the links*/
+	counter-reset: flag; 
 }
 
-nav{
-    width: 100%;
-
-}
-li a{
-    font-size:19px;
-    padding: 50px;
-    margin-top: 10rem;
-    text-decoration: none;
-    color: black;
-}
-nav ul{
-    display:flex;
-    width: 100%;
-    margin: 0 auto;
-    background-color:blue;
-    list-style-type: none;
-    height: 5rem;
-    justify-content: center;
-}
-.bea3:hover, .bea0:hover, .bea1:hover{
-    font-size: 25px;
-    color:crimson;
-}
-.bea0{
-    color: gold;
+.breadcrumb a {
+	text-decoration: none;
+	outline: none;
+	display: block;
+	float: left;
+	font-size: 18px;
+	line-height: 36px;
+	padding: 0 10px 0 60px;
+	position: relative;
 }
 
 .card-img-top{
     object-fit: cover;
-    background-size: cover;
-    width: 100%;    
+    background-size: contain; 
+    height: 20em;  
 }
 .card {
-    text-align: center;
-    width: 90%;
     border: 1px solid #ccc;
-    margin-left: 20px;
     margin: 20px;
 }
-footer{
+footer, .pres,.card {
     text-align: center;
 }
 .logo {
@@ -50,48 +40,47 @@ footer{
 }
 .activite{
     background-color:lightgray;
-    overflow: hidden;
+    box-sizing: border-box;
+      
+}
+.card-title{
+    font-size: 16px;
 }
 .pres{
-    text-align: center;
-    font-family: Verdana, sans-serif;
     margin-top: 20px;
     margin-left: 10%;
     margin-right: 10%;
     text-align: justify;
 }
-.card-text::first-letter{
+.card-title::first-letter{
     color: chocolate;
 }
- .bottom-arrow {
-    position: fixed; /* pour fixer les flèches à un endroit précis de la page */
-    top: 30px; /* distance de la flèche du bas par rapport au bas de la fenêtre */
-    right: 20px; /* distance de la flèche de droite par rapport à droite de la fenêtre */
-    /* background-color: #333; Couleur de fond */
-    color:black; /* Couleur de la flèche */
-    padding: 10px; /* Espacement intérieur */
-    border-radius: 50%; /* pour faire un cercle */
-    text-decoration: none; /* Supprimer la soulignation */
-    font-size: 1.5em; /* Taille de la flèche */
-    cursor: pointer;
-
-}
-
-.arrow-up {
-    width: 40px;
-    height: 40px;
-    /* background-image: url('fleche-haut.png'); remplacez cette ligne avec l'URL de votre image de flèche */
-    background-repeat: no-repeat;
-    /* background-position: center; */
-    position: fixed;
-    bottom: 30px;
-    right: 20px;
-    cursor: pointer;
-    color: darkblue;
-    /* display: none; la flèche est cachée par défaut */
-  }
   @media screen and (max-width:700px){
-    .pres{
-        word-spacing: -3.5px;
-    }
-  }
+        body{
+            overflow-x: hidden;
+        }
+        .navbar-nav {
+            flex-direction: column;
+            text-align: center;
+            margin-left:10%
+          }
+          .navbar-nav .nav-item {
+            margin-bottom: 10px;
+          }
+          .card{
+          padding: 0;
+          white-space:normal
+          }
+          .activite{
+                box-sizing: border-box;
+                max-width: 100%;
+                padding: 0;
+          }
+          .pres{
+            margin-left: 5%;
+            margin-right: 5%;
+          }
+          .breadcrumb a{
+            font-size: 13px;
+          }
+        }

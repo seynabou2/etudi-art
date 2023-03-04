@@ -1,108 +1,145 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="3">
-    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etudi'art</title>
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="style_activite.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="activite.js"></script>
 </head>
-<body>
-    <main>
-        <nav class="nav">
-            <ul>
-                <li>
-                    <a class="bea0" href="Accueil.html">
-                        EDUTI'ART
-                    </a>
-                </li>
-                <li>
-                    <a class="bea1" href="Accueil.html">
-                        Accueil
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <section class="activite">
-            <h2></h2>
-            <p class="pres">
-                Les activités d’Etudi'Art portent sur la création des spectacles,
-                sur la participation aux évènements socio-culturels, aux
-                séminaires et de formation. Ses domaines d'action touchent la citoyenneté,
-                la solidarité de proximité et à l'échelle internationale, animation locale et le volontariat.
-            </p>
-        </section>
-        <div class="row row-cols-1 row-cols-sm-2">
-            <article class="col p-2">
-                <div class="card">
-                    <img src="images/IMG_2666.JPG" class="card-img-top rounded-3" alt="" height="205rem" />
-                    <div class="card-body">
-                        <h5 class="card-title">Passées</h5>
-                        <p class="card-text">
-                            Lecture spectacle de la pièce
-                            théâtrale "Le 3 mai 2025" d'abord en
-                            direct sur Twitch, ensuite sur le
-                            plateau du MDE et enfin au café
-                            littéraire M'tiss de Jean N'Dour
-                        </p>
-                    </div>
-                </div>
-            </article>
-            <article class="col p-2">
-                <div class="card">
-                    <img src="images/IMG_2767.JPG" class="card-img-top rounded-3" alt="" height="205rem"/>
-                    <div class="card-body">
-                        <h5 class="card-title">Présentes</h5>
-                        <p class="card-text">
-                            Projet de Création théâtrale en cours.
-                            Financé par la commission Culture
-                            Actions du Crous Lorraine et le Fond
-                            de Solidarité et de Développement aux
-                            Initiatives Etudiantes (FSDIE).
-                        </p>
-                    </div>
-                </div>
-            </article>
-            <article class="col p-2">
-                <div class="card">
-                    <img src="images/IMG_2791.JPG" class="card-img-top rounded-3" alt="" height="205rem" />
-                    <div class="card-body">
-                        <h5 class="card-title">Futures</h5>
-                        <p class="card-text">
-                            Représentation de la pièce théâtrale
-                            La Marmite de Koka-Mbala de Guy
-                            Menga au festival Prélude dans le
-                            Franche-Comté et sur le plateau
-                            <abbr title="Espace Bernard Marie Koltès">d'EBMK</abbr>-Metz.
-                        </p>
-                    </div>
-                </div>
-            </article>
-        </div>
-    </main>
-</body>
-<footer>
-    <img src="images/Email Signature Logo.png" alt="photo" class="logo">
-    <a href="#top">
-        <div class="arrow-up">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                class="bi bi-chevron-double-up" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                    d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z" />
-                <path fill-rule="evenodd"
-                    d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" />
-            </svg>
-        </div>
-    </a>
-    
-<a href="#bottom" class="bottom-arrow">
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-down" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-        <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-      </svg>
-</a>
 
-</footer>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">Etudi'art</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Accueil</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="Presentation.html">Administration</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="multimedia.html">Multimédia</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="breadcrumb">
+        <a href="#" class="breadcrumb-item active">Passées</a>
+        <a href="presente.html" class="breadcrumb-item">Présentes</a>
+        <a href="future.html" class="breadcrumb-item">Programmation</a>
+    </div>
+    <div class="activite">
+        <p class="pres">
+            Les activités d’Etudi'Art portent sur la création des spectacles,
+            sur la participation aux évènements socio-culturels, aux
+            séminaires et formations. Ses domaines d'action touchent la citoyenneté,
+            la solidarité de proximité, l'animation locale et le volontariat.
+            L'association souhaite ainsi renforcer les connaissances de ses membres et
+            favoriser des échanges fructueux autour de la question du multiculturalisme,
+            de la protection et de la valorisation de l’environnement à travers ses actions.
+            Elle participe donc à cette
+            grande vision d’une qualité de vie, d’une société égalitaire, équitable
+            et équilibrée qu’on aimerait tous avoir.
+        </p>
+    </div>
+    <div class="row row-cols-1 row-cols-sm-2">
+        <article class="col p-4 ">
+            <div class="card">
+                <img src="images/IMG_2787.JPG" class="card-img-top img1 rounded-3" alt="image">
+                <div class="card-body">
+                    <h5 class="card-title">Séance d'entraînement</h5>
+                </div>
+            </div>
+        </article>
+        <article class="col p-4">
+            <div class="card">
+                <img src="images/passée1.jpg" class="card-img-top img1 rounded-3" alt="image">
+                <div class="card-body">
+                    <h5 class="card-title">Lecture de la pièce
+                        théâtrale "Le 3 mai 2025" en
+                        direct sur Twitch le  13/01/2023</h5>
+                </div>
+            </div>
+        </article>
+        <article class="col p-4">
+            <div class="card">
+                <img src="images/passee2.jpg" class="card-img-top img1 rounded-3" alt="image">
+                <div class="card-body">
+                    <h5 class="card-title">Lecture de la pièce
+                        théâtrale "Le 3 mai 2025" en
+                        direct sur Twitch le<br> 13/01/2023</h5>
+                </div>
+            </div>
+        </article>
+        <article class="col p-4 ">
+            <div class="card">
+                <img src="images/passee3.jpg" class="card-img-top img1 rounded-3" alt="image">
+                <div class="card-body">
+                    <h5 class="card-title">Lecture spectacle de la pièce
+                        théâtrale "Le 3 mai 2025"sur le
+                        plateau de la <abbr title="Maison de l'Etudiant" class="me"> MDE </abbr>le 19/01/2023</h5>
+                </div>
+            </div>
+        </article>
+        <article class="col p-4 ">
+            <div class="card">
+                <img src="images/passee4.jpg" class="card-img-top img1 rounded-3" alt="image">
+                <div class="card-body">
+                    <h5 class="card-title">Lecture spectacle de la pièce
+                        théâtrale "Le 3 mai 2025"sur le
+                        plateau de la <abbr title="Maison de l'Etudiant" class="me"> MDE </abbr>le 19/01/2023</h5>
+                </div>
+            </div>
+        </article>
+        <article class="col p-4 ">
+            <div class="card">
+                <img src="images/passee5.jpg" class="card-img-top img1 rounded-3" alt="image">
+                <div class="card-body">
+                    <h5 class="card-title">Lecture spectacle de la pièce
+                        théâtrale "Le 3 mai 2025"sur le
+                        plateau de la <abbr title="Maison de l'Etudiant"> MDE </abbr>le 19/01/2023</h5>
+                </div>
+            </div>
+        </article>
+        <article class="col p-4 ">
+            <div class="card">
+                <img src="images/passee6.jpg" class="card-img-top img1 rounded-3" alt="image">
+                <div class="card-body">
+                    <h5 class="card-title">Lecture spectacle de la pièce
+                        théâtrale "Le 3 mai 2025"sur le
+                        plateau de la <abbr title="Maison de l'Etudiant" class="me"> MDE</abbr> le 19/01/2023</h5>
+                </div>
+            </div>
+        </article>
+        <article class="col p-4 ">
+            <div class="card">
+                <img src="images/passee7.jpg" class="card-img-top img1 rounded-3" alt="image">
+                <div class="card-body">
+                    <h5 class="card-title">Lecture spectacle de la pièce
+                        théâtrale "Le 3 mai 2025"sur le
+                        plateau de la <abbr title="Maison de l'Etudiant" class="me"> MDE </abbr> le 19/01/2023</h5>
+                </div>
+            </div>
+        </article>
+    </div>
+    <footer>
+        <div>
+            <img src="images/Email-Signature-Logo.png" alt="photo" class="logo">
+        </div>
+    </footer>
+</body>
+
 </html>

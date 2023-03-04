@@ -1,0 +1,80 @@
+
+.breadcrumb {
+	/*centering*/
+	display: inline-block;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.35);
+	overflow: hidden;
+	border-radius: 5px;
+	/*Lets add the numbers for each link using CSS counters. flag is the name of the counter. to be defined using counter-reset in the parent element of the links*/
+	counter-reset: flag; 
+}
+
+.breadcrumb a {
+	text-decoration: none;
+	outline: none;
+	display: block;
+	float: left;
+	font-size: 18px;
+	line-height: 36px;
+	padding: 0 10px 0 60px;
+	position: relative;
+}
+.text-center{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.card {
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-title {
+    font-size: 24px;
+  }
+  
+  .card-text {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .btn-group {
+    margin-right: 10px;
+  }
+  
+  .btn {
+    border-radius: 5px;
+    padding: 10px 20px;
+  }
+  
+  .btn-outline-secondary {
+    color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .btn-outline-secondary:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .text-muted {
+    font-size: 14px;
+  }
+  
+
+  @media screen and (max-width:700px){
+    .breadcrumb {
+        white-space: nowrap;
+      }
+      .breadcrumb a{
+        font-size: 13px;
+      }
+      .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+        margin-left:10%
+      }
+      .navbar-nav .nav-item {
+        margin-bottom: 10px;
+      }
+  }

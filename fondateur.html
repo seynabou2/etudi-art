@@ -2,48 +2,76 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="3">
-    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etudi'art</title>
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="fondateur.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="presentation.js"></script>
 </head>
 <body>
-    <main>
-        <nav class="nav">
-            <ul>
-                <li>
-                    <a class="bea0" href="Accueil.html">
-                        EDUTI'ART
-                    </a>
-                </li>
-                <li>
-                    <a class="bea1 " href="activité.html">
-                        Activités
-                    </a>
-                </li>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="index.html">Etudi'art</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item ">
+                <a class="nav-link" href="index.html">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="activité.html">Activités</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="multimedia.html">Multimédia</a>
+              </li>
             </ul>
+          </div>
         </nav>
+      </header>
+      <div class="breadcrumb">
+        <a href="Presentation.html" class="breadcrumb-item ">Bureau</a>
+        <a href="fondateur.html" class="breadcrumb-item active">Directeur artistique</a>
+</div>
         <div class="container">
             <img src="images/Photo_NK.jpeg" alt="fondateur" class="float-image">
             <h5 class="co">
-                Administrateur culturel et responsable de projet
+                Président et directeur artistique
             </h5>
-            <p class="float-text">Koffi N'Danou, metteur en scène, fonde la compagnie Cie A'Kati
-                au Togo en 2018 pour produire son spectacle Le Sexisme.
-                A la tête de sa compagnie, il poursuit l'aventure des créations dans
-                différentes structures, écoles et centres culturels, lors de festivals ou d'activités artistiques
-                en alternant entre productions semi-professionnelles et créations partagées.
+            <p class="float-text">Koffi N’DANOU, metteur en scène, 
+              fonde la Cie A’Kati au Togo en 2018 pour produire son spectacle Le sexisme. 
+              À la tête de sa compagnie, il poursuit l’aventure des créations dans différentes structures, écoles et 
+              centres culturels, lors de festivals ou d’activités artistiques, en alternant entre productions 
+              semi-professionnelles et créations partagées.</p>
 
-                Koffi N'Danou, est titulaire d'une licence en littéraire moderne à
-                l'Université de Lomé, puis d'une nouvelle licence en Arts du
-                spectacle à l'Université de Lorraine.
-                Il y poursuit actuellement ses études en Master Arts, Dramaturgie et Mise en scène en Europe.
-                Ancien secrétaire du Théâtre Universitaire de Metz, il est l'actuel
-                président de l'Association culturelle Etudi'Art et auteur de deux livres intitulés "Trêves et Rêves" et
-                "Le 3 mai 2025"</p>
-        </div>
+ 
+             <p class="float-text">
+              Koffi N’DANOU est titulaire d’une licence en littérature moderne à l’Université de Lomé,
+              puis d’une nouvelle licence en arts du spectacle à l’Université de Lorraine. 
+              Il y poursuit actuellement ses études en Master Arts, "Dramaturgie et Mise en scène en Europe" et
+               intervient auprès de la Licence 1 Arts du spectacle en tant que tuteur.
+                Ancien secrétaire du Théâtre Universitaire de Metz, il est actuellement 
+                le président et le directeur artistique de l’Association culturelle Etudi’Art.
+                 Auteur d’un recueil de poèmes, sa dernière création théâtrale est datée du 19 janvier 2023,
+                  il y met en scène sa propre pièce intitulée Le 03 mai 2025, publiée en décembre 2022 à Paris. 
+                  Egalement étudiant entrepreneur, il développe et anime plusieurs projets culturels financés
+                   par le Crous, le FSDIE et la Région Grand Est.</p>
+            
+              </div>
+            
+              
         <hr>
         <div class="object">
             <h5>
@@ -60,19 +88,5 @@
                 création
             </p>
         </div>
-    </main>
 </body>
-<footer>
-    <a href="#top">
-        <div class="arrow-up">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                class="bi bi-chevron-double-up" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                    d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z" />
-                <path fill-rule="evenodd"
-                    d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" />
-            </svg>
-        </div>
-    </a>
-</footer>
 </html>

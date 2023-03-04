@@ -1,36 +1,25 @@
+body {
+    overflow-x: hidden;
+}
+  
 
-.title{
-    text-align: center;
-    margin-bottom: 10px;
-    background-color: beige;
-}
-.bea0{
-    color: gold;
-}
-nav{
-    width: 100%;
-    background-color:blue; /* Couleur de fond */
-    padding: 0px 20px; /* Espacement intérieur */
-    justify-content: space-between; /* pour l'alignement des éléments à droite et à gauche */
-
-}
-nav li{
-    margin-right: 10px
-}
-nav a{
-    padding: 50px;
-    margin-top: 10rem;
-    text-decoration: none; /* Supprimer la soulignement des liens */
-    font-size: 1.2em; /* Taille de police */
-}
-nav ul{
-    display:flex;
-    width: 100%;
-    margin: 0 auto;
-    list-style-type: none;
-    height: 5rem;
+header h2{
+    background-image: url(images/IMG_2666.JPG);
+    height: 500px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
     justify-content: center;
-}
+    margin-top: 20px;
+ }
+
+  header h2 {
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    text-shadow: 1px 1px #333;
+ }
+
 
 .footer{
     background-color:antiquewhite; 
@@ -38,14 +27,18 @@ nav ul{
     max-width: 100%;
     display: grid;
     height: 40%;
+    margin: 0;
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
-
 }
-.tel,  .contact{
+
+.tel{
     margin-left:40%;
 }
-.apropos{
+.contact{
+    margin-left:40%;
+}
+.apropos, .title{
     text-align: center;
 }
 .paragraphe{
@@ -64,7 +57,10 @@ nav ul{
 .email, .inst, .face,.lien, li a{
     color: black;
 }
-.inst, .face,.lien{
+.inst, .face{
+    font-weight:400
+}
+.lien{
     font-weight: lighter;
 }
 .bi-facebook{
@@ -75,26 +71,6 @@ nav ul{
     color: rgba(185, 58, 121, 0.653);
 }
 
-.bea1:hover,.bea2:hover,.bea3:hover, .bea0:hover{
-    font-size: 25px;
-    color:crimson;
-}
-
-.ban:hover{
-    color: gold;
-}
-  
-.img-fluid{
-    width: 100%; /* Largeur de l'image */
-    height: auto; /* Hauteur automatique pour conserver les proportions */
-    display: block; /* pour centrer l'image horizontalement */
-    margin: 0 auto; /* pour centrer l'image horizontalement et verticalement */
-    }
-.logo{
-    position: absolute;
-    top: 500px;
-    width: 130px;
-}
 .seyna a, .seyna{
     color: white;
 }
@@ -106,17 +82,18 @@ nav ul{
     
 }
 
+
 @media screen and (max-width:700px) {
-    nav ul{
-        width: 100%;
+    .info{
+        margin-right: 20%;
     }
     .footer{
         grid-template-columns: 1fr;
 }
 .paragraphe{
     max-width: 100%;
-        margin-left: 10%;
-    margin-right: 10%;
+        margin-left: 6%;
+    margin-right: 6%;
 } 
 .tel,  .contact{
     margin-left:16%;
@@ -124,4 +101,14 @@ nav ul{
 .apropos, .tel,.contact, .lien{
     text-align: center;
 }
+body{
+    overflow-x:  hidden;
+}
+.navbar-nav {
+    flex-direction: column;
+    text-align: center;
+  }
+  .navbar-nav .nav-item {
+    margin-bottom: 10px;
+  }
 }

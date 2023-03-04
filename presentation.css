@@ -1,171 +1,99 @@
 
 body{
     background-color: aliceblue;
-}
-
-.logo{
-    margin-left:50% ;
-} 
-
- .texte{
-    margin-top: 10px;
-    margin-left: 40%;
-    text-justify:inter-word;
-} 
-.card-img-top{
-    object-fit: cover;
-    background-size: cover;
-    width: 100%;    
-}
-.card {
-    text-align: center;
     width: 100%;
-    border: 1px solid #ccc;
-    margin: 10px;
-    
-      
-  }
+}
 
-/* .stell{
-    position: absolute;
-    left: 65%;
-    width:80%;
-    top: 545px;
-   
-}
-.stell, .leon, .koff{
-    border: 1px black solid;
-} */
-
-
-
-/* .fig{
-    position: absolute;
-    left: 65%;
-   
-   
-}
-body{
-    overflow-x: hidden;
-} */
-/* }
-
-.fig1{
-    left: 37.5%;
-}
-.fig2{
-    left: 11.5%;
-}
-.fig2, .fig1,.fig{
-    position: absolute;
-    top:860px;
-}
-.fig1, .fig, .fig2{
-    width: 18%;
-    border: thin silver solid;
-    margin: 0.5em;
-    padding: 0.5em;
-    text-align: center;
-    font-size:large;
-    text-indent: 0;
-    background-color: lightblue;
-    font-weight: bold;
-    color: black;
-} */
-.fondateur{
-    text-decoration: none;
-    font-size: 18px;
-    color: black;
-    font-weight: bold;
-}
-.container {
+ .container {
     display: flex;
     justify-content: space-between;
-}
-.creation{
-    text-align: center;
-}
-.bu{
-    margin-top: 30px;
-    text-align: center;
-}
-
-.image{
-    width: 90%;
+} 
+.koffi,.leon,.stell{
     object-fit: contain;
     background-size:contain;
-    margin-left: 15%;
-}
-.description{
-    text-align: justify;
-    width: 60%;
-    margin-left: 30%;
-    margin-top: 10px;
-}
-.texte{
-    margin-left: 20%;
-    margin-right: 20%;
-    text-align: justify;
-    margin-top: 30px;
-    
-}
-.bea3:hover, .bea0:hover{
-    font-size: 25px;
-    color:crimson;
-}
-.bea0{
-    color: gold;
-}
-nav{
+    height: 80%;
     width: 100%;
 
 }
-li a{
-    font-size:19px;
-    padding: 50px;
-    margin-top: 10rem;
-    color: black;
-    text-decoration: none;
+.koffi{
+    margin-left: -8%;
 }
-nav ul{
-    display:flex;
-    width: 100%;
-    margin: 0 auto;
-    background-color:blue;
-    list-style-type: none;
-    height: 5rem;
-    justify-content: center;
+.leon{
+    margin-left: -6%;
 }
-.arrow-up {
-    width: 40px;
-    height: 40px;
-    background-repeat: no-repeat;
-    top: 97%;
-    position: fixed;
-    bottom: 5px;
-    right: 20px;
-    cursor: pointer;
-    color: darkblue;
-    /* display: none; la flèche est cachée par défaut */
+.stell{
+    margin-left: -1%;
+}
+.description {
+    text-align: center;
+    margin-top: 30px;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    width: 70%;
+    height: 10%;
+    margin-left: 10%;
+    margin-right: 25%;
   }
-@media (max-width: 700px) {
+  
+
+.bureau{
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: justify
+}
+
+.breadcrumb {
+	/*centering*/
+	display: inline-block;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.35);
+	overflow: hidden;
+	border-radius: 5px;
+	/*Lets add the numbers for each link using CSS counters. flag is the name of the counter. to be defined using counter-reset in the parent element of the links*/
+	counter-reset: flag; 
+}
+
+.breadcrumb a {
+	text-decoration: none;
+	outline: none;
+	display: block;
+	float: left;
+	font-size: 18px;
+	line-height: 36px;
+	padding: 0 10px 0 60px;
+	position: relative;
+}
+@media (max-width: 810px) {
     .container {
         flex-direction: column;
 }
-    
-    .image, img.stell{
-        max-width: 100%;
+    .description{
+        width: 50%;
+        font-size: 13px;
+        margin-top: 30px;
+        margin-right: 23%;
+        margin-left: 25%;
+        margin-bottom: 30px;
+    } 
+    .bureau{
+    margin-left: 6%;
+    margin-right: 6%;
+    } 
+    .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+      }
+      .navbar-nav .nav-item {
+        margin-bottom: 10px;
+      }
+      .image{
+        max-width: 90%;
         height: 50%;
         text-align: center;
         margin-left: 5%;
-        margin-bottom: 20px;
-    }
-    .texte{
-        max-width: 100%;
-        margin-left: 10%;
-    margin-right: 10%;
     }
     .description{
-        margin-left: 20%;
+        margin-left: 24%;
+        margin-top: 20px;
     }
 }
